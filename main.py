@@ -3,21 +3,13 @@ import winsound
 import datetime as _dt
 
 
-
-
-
-
-
 def play_work_sound():
-
     winsound.Beep(2500, 1000) 
 
 def play_break_sound():
-  
     winsound.Beep(3500, 1000) 
 
 def play_pomodoro_end_sound():
-
     winsound.Beep(4000, 1000)  
 
 
@@ -39,12 +31,9 @@ class PomodoroTimer:
         self.x = range(3 * self.wrks + 3 * self.brks, 4 * self.wrks + 3 * self.brks)
         for h in (self.u, self.v, self.w, self.x):
             self.set_of_counts.extend(h)
-#        self.set_of_counts.extend(self.u)
-#        self.set_of_counts.extend(self.v)
-#        self.set_of_counts.extend(self.w)
-#        self.set_of_counts.extend(self.x)
-        self.end_of_pomodoro = 3 * (self.wrks + self.brks) + self.wrks + self.frks
 
+
+        self.end_of_pomodoro = 3 * (self.wrks + self.brks) + self.wrks + self.frks
         self.CLOCK_FONT_TYPE = "Cambria Math"
         self.LABEL_FONT = "Segoe Print"
         self.W = None
@@ -76,7 +65,6 @@ class PomodoroTimer:
         self.tick_mark.grid(row=3, column=1)
 
     def count_down(self, count):
-
         if count in [self.u[0], self.v[0], self.w[0], self.x[0]]:
             self.dlt = self.wrks
             play_work_sound()
@@ -110,8 +98,10 @@ class PomodoroTimer:
             self.W = self.window.after(1000, self.count_down, count + 1)
             self.dlt += -1
 
+
     def start_f(self):
         self.count_down(0)
+
 
     def rst_f(self):
         try:
@@ -122,6 +112,7 @@ class PomodoroTimer:
             self.tiik = "✔"
         except ValueError:
             return print("You should not press reset before starting the timer.")
+
 
     def run_timer(self):
         self.window.mainloop()
