@@ -107,7 +107,7 @@ class PomodoroTimer:
         if count < self.end_of_pomodoro + 1:
             tm_txt = f'{_dt.timedelta(seconds=self.dlt)}'
             self.kyanvas.itemconfig(self.text_kyanvas, text=tm_txt[2:])
-            self.W = self.window.after(3, self.count_down, count + 1)
+            self.W = self.window.after(1000, self.count_down, count + 1)
             self.dlt += -1
 
     def start_f(self):
