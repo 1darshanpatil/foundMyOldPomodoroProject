@@ -1,11 +1,12 @@
 #----------------------------------------------------------------------------------------------------------------------------------------#
-# THIS IS WAS THE REAL CODE USING WHICH                                                                                                  #            
+# THIS WAS THE REAL CODE I USED TO CREATE THE GITHUB REPO:                                                                               #            
 # https://github.com/1darshanpatil/foundMyOldPomodoroProject/blob/main/main.py                                                           #          
-# ^ WAS CREATED, HOWEVER, THIS CODE LOOKS TOO UGLY TO BE A READABLE SO IN MY SPARE TIME I DECIDED                                        #
-# TO USE CLASS OBJECTS AND ADDED `ALERT SOUNDS` PLEASE BE NOTED THAT I HAVE USED WINSOUND SO THAT WILL WORK FOR WINDOWS (NOT LINUX)      #
+# ^ HOWEVER, THIS CODE LOOKS TOO UGLY TO BE READABLE. SO IN MY SPARE TIME, I DECIDED                                                     #
+# TO USE CLASS OBJECTS AND ADD `ALERT SOUNDS`. PLEASE NOTE THAT I HAVE USED WINSOUND, SO IT WILL ONLY WORK ON WINDOWS (NOT LINUX).       #
 #                                                                                                                                        #
 #                                                                                                                    EDITED: 29-07-2023  #
 #----------------------------------------------------------------------------------------------------------------------------------------#
+
 
 #5Min of work
     #1min of break
